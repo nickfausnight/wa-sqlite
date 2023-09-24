@@ -1,3 +1,15 @@
+# Fork Notes
+
+This repo was forked from [rhashimoto](https://github.com/rhashimoto/wa-sqlite) to fix building from MacOS.
+
+The Makefile has had minor changes to support building from MacOS, but source files have been left alone. In the process I've added a dependency on `awk`.
+
+*Other MacOS (and wasm noob) Notes from getting things running*:
+- The system verison bundled with MacOS is super old. You need openssl >= 3 - `brew upgrade openssl`
+- `emcc` refers to the emscripten compiler. `brew install emsscripten`
+
+The remainder of this README is original to the source repo.
+
 [![wa-sqlite CI](https://github.com/rhashimoto/wa-sqlite/actions/workflows/ci.yml/badge.svg?branch=breaking-changes)](https://github.com/rhashimoto/wa-sqlite/actions/workflows/ci.yml?branch=breaking-changes)
 
 # wa-sqlite
